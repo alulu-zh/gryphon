@@ -1,12 +1,22 @@
 workspace:
   base: /java
 pipeline:
-  test:
+  java:
     image: java:8u111-jdk
     commands:
       - pwd
       - whoami
       - java -version
+      - date
+      - sleep 305
+      - date
+  maven:
+    image: maven:3.5.2-jdk-8
+    commands:
+      - pwd
+      - whoami
+      - mvn --version
+      - mvn clean install
       - date
       - sleep 305
       - date
