@@ -6,4 +6,6 @@ pipeline:
     commands:
       - pwd
       - whoami
-      - java --version
+      - java -version
+      - date
+      - sleep 60
