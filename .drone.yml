@@ -1,0 +1,9 @@
+workspace:
+  base: /java
+pipeline:
+  test:
+    image: java:8u111-jdk
+    commands:
+      - pwd
+      - whoami
+      - java --version
