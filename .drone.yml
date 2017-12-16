@@ -8,5 +8,5 @@ pipeline:
       - whoami
       - java -version
       - date
-      - sleep 300
+      - sleep 305
       - date
